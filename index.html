@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <button class="menu">&#9776;</button>
+        <h1>自遊自宅</h1>
+        <h2>毛小孩天堂</h2>
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="checkin.html">Checkin</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="logo">
+        </section>
+
+
+        <script language="JavaScript">
+          function ShowTime(){
+          var NowDate=new Date();
+          var yy=NowDate.getFullYear();
+          var MM=NowDate.getMonth()+1;
+          var dd=NowDate.getDate();
+          var hh=NowDate.getHours();
+          var mm=NowDate.getMinutes();
+          var ss=NowDate.getSeconds();
+          hh=checkTime(hh);
+          MM=checkTime(MM);
+          dd=checkTime(dd);
+          mm=checkTime(mm);   
+          ss=checkTime(ss);
+          var day;
+          if(NowDate.getDay()==0)   day   =   "星期日 " 
+          if(NowDate.getDay()==1)   day   =   "星期一 " 
+          if(NowDate.getDay()==2)   day   =   "星期二 " 
+          if(NowDate.getDay()==3)   day   =   "星期三 " 
+          if(NowDate.getDay()==4)   day   =   "星期四 " 
+          if(NowDate.getDay()==5)   day   =   "星期五 " 
+          if(NowDate.getDay()==6)   day   =   "星期六 "
+          document.getElementById('showbox').innerHTML = yy+"/"+MM+"/"+dd+" "+hh+':'+mm+':'+ss+" "+day;
+          setTimeout('ShowTime()',1000);
+          }
+          function checkTime(i)   
+            {   
+                if (i<10){
+                    i="0" + i;
+                }   
+                  return i;
+            }  
+        </script>
+          
+          <body onload="ShowTime()">
+            <div id="showbox"></div>
+          </body>
+
+        
+
+    
+    
+      </main>
+      <footer>
+        <p>Copyright © 2023 自遊自宅</p>
+      </footer>
+    </body>
+    
+    </html>

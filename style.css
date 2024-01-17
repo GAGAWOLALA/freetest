@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    background-color: rgba(35, 28, 26, 0.8);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+  }
+  
+  header li {
+    display: inline;
+    margin-left: 3vw;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  header ul {
+    position: absolute;
+    right:25vw;
+    top: 0;
+    line-height: 80px;
+  }
+  
+  h1 {
+    color: white;
+    margin-left: 4vw;
+    left: 80px;
+    top: 0;
+    line-height: 80px;
+    font-size: 50px;
+    font-style: monospace;
+  }
+  
+  .logo {
+    background-color: antiquewhite;
+    color: white;
+    height: 120vh;
+    background-image: url("freelogo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header h2 {
+    color: black;
+    margin-left: 5vw;
+    font-size: 20px;
+  }
+
+  div {
+    color: whitesmoke;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    position: fixed;
+  }
+  
+  footer {
+    background-color: black;
+    color: greenyellow;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .checkintop {
+    background-color: rgba(35, 28, 26, 0.8);
+    height: 80px;
+    width: 100%;
+    position: relative;
+  }
+  .checkintop h1 {
+    color: white;
+    margin-left: 4vw;
+    left: 80px;
+    top: 0;
+    line-height: 80px;
+    font-size: 50px;
+    font-style: monospace;
+  }
+  .checkin form{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkintop ul {
+    position: absolute;
+    right:5vw;
+    top: 0;
+    line-height: 80px;
+  }
+
+  .checkintop li {
+    display: inline;
+    margin-right: 4vw;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .checkintop a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .checkintop a:hover {
+    text-decoration: underline;
+  }
+  
+  .checkin p {
+    margin-bottom: 10px;
+  }
+  
+  .checkin input,
+  .checkin button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  .checkin input {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .checkin button {
+    width: 60px;
+    cursor: pointer;
+  }
+  
+  input::placeholder {
+    color: #DDDDDD;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #E0E9A3;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  
+  /* diff device */
+  @media screen and (max-width: 768px) {
+    header ul {
+      display: none;
+    }
+  
+    header h1 {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    header h2 {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    .menu {
+      display: block;
+      background-color: transparent;
+      color: white;
+      font-size: 35px;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+
+  
+  }
+
+
+
+  .contactul {
+    background-color: rgba(35, 28, 26, 0.8);
+    height: 100px;
+    width: 100%;
+    position: relative;
+  }
+
+  .contactul ul {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contactul li {
+    display: inline;
+    margin-right: 4vw;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .contactul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .contactul a:hover {
+    text-decoration: underline;
+  }
+
+
+  .newsh1 {
+    background-color: rgba(35, 28, 26, 0.8);
+    height: 80px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .newsh1 p {
+    background-color: rgb(3, 197, 132, 0.5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsh1 ul {
+    position: absolute;
+    right:5vw;
+    top: 0;
+    line-height: 80px;
+  }
+
+  .newsh1 li {
+    display: inline;
+    margin-right: 4vw;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .newsh1 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .newsh1 a:hover {
+    text-decoration: underline;
+  }
